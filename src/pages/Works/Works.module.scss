@@ -68,28 +68,19 @@
     input[type="radio"] {
       &:checked + label {
         background-color: var(--detail-red);
+
         &[for*="1"]::before {
-          content: "Sobre";
+          content: "Tecnologias Trabalhadas";
           padding: 6px 16px;
         }
-      }
-    }
-  
-    input[type="radio"] {
-      &:checked + label {
-        background-color: var(--detail-red);
+
         &[for*="2"]::before {
-          content: "CEO & Founder";
+          content: "Controle Financeiro";
           padding: 6px 16px;
         }
-      }
-    }
-  
-    input[type="radio"] {
-      &:checked + label {
-        background-color: var(--detail-red);
+
         &[for*="3"]::before {
-          content: "Equipe";
+          content: "Music Notes";
           padding: 6px 16px;
         }
       }
@@ -129,181 +120,73 @@
           color: var(--detail-white);
           width: 100%;
           height: auto;
-        }
+        }        
   
-        .skils {
-          display: grid;
-          grid-template-columns: 0.5% 25% 49% 25% 0.5% repeat(5, 1fr);
-          grid-template-areas: "margin-left soft photo hard margin-right";
-  
-          .photo {
-            width: 100%;
-            height: 100%;
-            grid-area: photo;
-  
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            animation: fadeIn2 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
-  
-            img {
-              min-height: 100px;
-              max-height: 300px;
-            }
-          }
-  
-          .tagsHard {
-            width: 100%;
-            height: 100%;
-            grid-area: hard;
-  
-            text-align: end;
-            color: var(--detail-white);
-  
-            span {
-              margin: 4px;
-              border: 1px solid var(--detail-white);
-              border-radius: 24px;
-              padding: 6px 16px;
-              width: auto;
-              height: auto;
-              background-color: transparent;
-              animation: fadeIn1 2s
-                linear(
-                  0 0%,
-                  0 2.27%,
-                  0.02 4.53%,
-                  0.04 6.8%,
-                  0.06 9.07%,
-                  0.1 11.33%,
-                  0.14 13.6%,
-                  0.25 18.15%,
-                  0.39 22.7%,
-                  0.56 27.25%,
-                  0.77 31.8%,
-                  1 36.35%,
-                  0.89 40.9%,
-                  0.85 43.18%,
-                  0.81 45.45%,
-                  0.79 47.72%,
-                  0.77 50%,
-                  0.75 52.27%,
-                  0.75 54.55%,
-                  0.75 56.82%,
-                  0.77 59.1%,
-                  0.79 61.38%,
-                  0.81 63.65%,
-                  0.85 65.93%,
-                  0.89 68.2%,
-                  1 72.7%,
-                  0.97 74.98%,
-                  0.95 77.25%,
-                  0.94 79.53%,
-                  0.94 81.8%,
-                  0.94 84.08%,
-                  0.95 86.35%,
-                  0.97 88.63%,
-                  1 90.9%,
-                  0.99 93.18%,
-                  0.98 95.45%,
-                  0.99 97.73%,
-                  1 100%
-                )
-                forwards;
-  
-                &:hover {
-                  background-color: var(--primary);
-                  font-weight: 500;
-                  color: var(--detail-white);
-                  border: none;
-                  cursor: default;
-                }
-            }
-  
-            h6 {
-              margin: 0 4px 8px 0;
-              color: var(--detail-red);
-              text-transform: uppercase;
-              font-size: 1rem;
-              font-weight: 400;
-            }
-          }
-  
-          .tagsSoft {
-            width: 100%;
-            height: 100%;
-            grid-area: soft;
-  
-            text-align: start;
-            color: var(--detail-white);
-  
-            span {
-              margin: 4px;
-              border: 1px solid var(--detail-white);
-              border-radius: 24px;
-              padding: 6px 16px;
-              width: auto;
-              height: auto;
-              background-color: transparent;
-              animation: fadeIn3 2s
-                linear(
-                  0 0%,
-                  0 2.27%,
-                  0.02 4.53%,
-                  0.04 6.8%,
-                  0.06 9.07%,
-                  0.1 11.33%,
-                  0.14 13.6%,
-                  0.25 18.15%,
-                  0.39 22.7%,
-                  0.56 27.25%,
-                  0.77 31.8%,
-                  1 36.35%,
-                  0.89 40.9%,
-                  0.85 43.18%,
-                  0.81 45.45%,
-                  0.79 47.72%,
-                  0.77 50%,
-                  0.75 52.27%,
-                  0.75 54.55%,
-                  0.75 56.82%,
-                  0.77 59.1%,
-                  0.79 61.38%,
-                  0.81 63.65%,
-                  0.85 65.93%,
-                  0.89 68.2%,
-                  1 72.7%,
-                  0.97 74.98%,
-                  0.95 77.25%,
-                  0.94 79.53%,
-                  0.94 81.8%,
-                  0.94 84.08%,
-                  0.95 86.35%,
-                  0.97 88.63%,
-                  1 90.9%,
-                  0.99 93.18%,
-                  0.98 95.45%,
-                  0.99 97.73%,
-                  1 100%
-                )
-                forwards;
-  
+        .techs {
+          width: 1000px;
+          height: auto;
+          text-align: center;
+          color: var(--detail-white);
+
+          span {
+            margin: 4px;
+            border: 1px solid var(--detail-white);
+            border-radius: 24px;
+            padding: 6px 16px;
+            width: auto;
+            height: auto;
+            background-color: transparent;
+            animation: fadeIn4 2s
+              linear(
+                0 0%,
+                0 2.27%,
+                0.02 4.53%,
+                0.04 6.8%,
+                0.06 9.07%,
+                0.1 11.33%,
+                0.14 13.6%,
+                0.25 18.15%,
+                0.39 22.7%,
+                0.56 27.25%,
+                0.77 31.8%,
+                1 36.35%,
+                0.89 40.9%,
+                0.85 43.18%,
+                0.81 45.45%,
+                0.79 47.72%,
+                0.77 50%,
+                0.75 52.27%,
+                0.75 54.55%,
+                0.75 56.82%,
+                0.77 59.1%,
+                0.79 61.38%,
+                0.81 63.65%,
+                0.85 65.93%,
+                0.89 68.2%,
+                1 72.7%,
+                0.97 74.98%,
+                0.95 77.25%,
+                0.94 79.53%,
+                0.94 81.8%,
+                0.94 84.08%,
+                0.95 86.35%,
+                0.97 88.63%,
+                1 90.9%,
+                0.99 93.18%,
+                0.98 95.45%,
+                0.99 97.73%,
+                1 100%
+              )
+              forwards;
+
               &:hover {
                 background-color: var(--detail-red);
                 font-weight: 500;
                 color: var(--detail-white);
                 border: none;
                 cursor: default;
+                animation: fadeIn2 .5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
               }
-            }
-  
-            h6 {
-              margin: 0 0 8px 4px;
-              color: var(--detail-red);
-              text-transform: uppercase;
-              font-size: 1rem;
-              font-weight: 400;
-            }
           }
         }
       }
@@ -343,6 +226,18 @@
     100% {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn4 {
+    0% {
+      opacity: 0;
+      transform: translateY(-0.5rem);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
   

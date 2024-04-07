@@ -17,15 +17,24 @@
 
   .slogan {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     h1 {
       margin: 0;
-      text-align: center;
       color: var(--detail-white);
       text-transform: uppercase;
       font-weight: 300;
       font-size: 3rem;
       font-family: "Six Caps", sans-serif;
       letter-spacing: 3px;
+
+      width: 216px;
+      animation: typing 1.5s steps(22), blink 0.5s step-end infinite;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 1px solid;
     }
   }
 
@@ -80,7 +89,7 @@
       color: var(--primary);
     }
 
-    &:hover{
+    &:hover {
       rotate: 360deg;
     }
   }
@@ -158,12 +167,24 @@
 
 @keyframes fadeIn1 {
   0% {
-      opacity: 0;
-      transform: translateY(2rem);
+    opacity: 0;
+    transform: translateY(2rem);
   }
 
   100% {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }

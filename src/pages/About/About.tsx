@@ -1,7 +1,7 @@
 import { useState } from "react";
 import style from "./About.module.scss";
 import classNames from "classnames";
-import logo from "../../assets/LogoStaffCode.svg";
+import photo from "../../assets/LogoStaffCode.svg";
 
 function About() {
   const [tabSelect, setTabSelect] = useState<string>("tab1");
@@ -166,15 +166,6 @@ function About() {
           name="tabs"
         />
         <label htmlFor="tab2"></label>
-        <span></span>
-
-        <input
-          onClick={() => setTabSelect("tab3")}
-          id="tab3"
-          type="radio"
-          name="tabs"
-        />
-        <label htmlFor="tab3"></label>
       </div>
 
       <section
@@ -206,14 +197,14 @@ function About() {
         <h1>Rafael Mendes</h1>
         <p>Pós-graduando em Arquitetura de Software.</p>
         <div className={style.skils}>
-          <div className={style.tagsSoft}>
+          <div className={style.tagsSoft} >
             <h6>Soft Skils</h6>
-            {softSkils.map((hard, key) => {
-              return <span key={key}>{hard.name}</span>;
+            {softSkils.map((soft, key) => {
+              return <span key={key}>{soft.name}</span>;
             })}
           </div>
           <div className={style.photo}>
-            <img src={logo} alt="photo" />
+            <img src={photo} alt="" />
           </div>
           <div className={style.tagsHard}>
             <h6>Hard Skils</h6>
@@ -221,17 +212,6 @@ function About() {
               return <span key={key}>{hard.name}</span>;
             })}
           </div>
-        </div>
-      </section>
-
-      <section
-        className={classNames(style.content, {
-          [style.selected]: tabSelect === "tab3",
-        })}
-      >
-        <h1>God is very Good</h1>
-        <div className={style.text}>
-          <p>Fuuuuuuuuuuuuunciona</p>
         </div>
       </section>
     </div>

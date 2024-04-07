@@ -16,7 +16,7 @@ function InternalLayout({ children }: InternalLayoutProps) {
     <div className={style.container}>
       <div className={style.custom_navbar}>
         <div className={style.logo}>
-          <img src={iconLogo} alt="logo" onClick={() => navigate("*")} />
+          <img src={iconLogo} alt="" onClick={() => navigate("*")} />
         </div>
         <div className={style.navbarlinks}>
           <ul className={style.nav}>
